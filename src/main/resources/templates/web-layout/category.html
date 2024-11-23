@@ -1,0 +1,909 @@
+<div th:fragment="category" id="shop-page-wrapper" class="pt-86 pt-md-56 pt-sm-46 pb-50 pb-md-20 pb-sm-10">
+  <div class="container">
+    <div class="row">
+      <!-- Start Sidebar Area Wrapper -->
+      <div class="col-lg-3 order-last order-lg-first mt-md-54 mt-sm-44">
+        <div class="sidebar-area-wrapper">
+          <!-- Start Single Sidebar -->
+          <div class="single-sidebar-wrap">
+            <h3 class="sidebar-title">Categories</h3>
+            <div class="sidebar-body">
+              <ul class="sidebar-list">
+                <li><a href="#">Accessories <span>(8)</span></a></li>
+                <li><a href="#">Brands <span>(2)</span></a></li>
+                <li><a href="#">Clothing <span>(12)</span></a></li>
+                <li><a href="#">Kids <span>(5)</span></a></li>
+                <li><a href="#">Men <span>(7)</span></a></li>
+                <li><a href="#">New in <span>(24)</span></a></li>
+                <li><a href="#">Outlet <span>(1)</span></a></li>
+                <li><a href="#">Wallets <span>(1)</span></a></li>
+                <li><a href="#">Shoes <span>(3)</span></a></li>
+                <li><a href="#">Women <span>(33)</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Single Sidebar -->
+
+          <!-- Start Single Sidebar -->
+          <div class="single-sidebar-wrap">
+            <h3 class="sidebar-title">Color</h3>
+            <div class="sidebar-body">
+              <ul class="sidebar-list">
+                <li><a href="#">Black <span>(3)</span></a></li>
+                <li><a href="#">Blue <span>(1)</span></a></li>
+                <li><a href="#">Brown <span>(7)</span></a></li>
+                <li><a href="#">Gold <span>(5)</span></a></li>
+                <li><a href="#">Grey <span>(4)</span></a></li>
+                <li><a href="#">White <span>(1)</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Single Sidebar -->
+
+          <!-- Start Single Sidebar -->
+          <div class="single-sidebar-wrap">
+            <h3 class="sidebar-title">Prices</h3>
+            <div class="sidebar-body">
+              <div class="price-range-wrap">
+                <div class="price-range" data-min="50" data-max="400"></div>
+                <div class="range-slider">
+                  <form action="#">
+                    <label for="amount">Price: </label>
+                    <input type="text" id="amount"/>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Sidebar -->
+
+          <!-- Start Single Sidebar -->
+          <div class="single-sidebar-wrap">
+            <h3 class="sidebar-title">Size</h3>
+            <div class="sidebar-body">
+              <ul class="size-list">
+                <li><a href="#">S</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">XL</a></li>
+                <li><a href="#">XXL</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Single Sidebar -->
+
+          <!-- Start Single Sidebar -->
+          <div class="single-sidebar-wrap">
+            <h3 class="sidebar-title">Tags</h3>
+            <div class="sidebar-body">
+              <ul class="tags-cloud">
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Dress</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Leather</a></li>
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Slim-fit</a></li>
+                <li><a href="#">Sweater</a></li>
+                <li><a href="#">Women</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Single Sidebar -->
+        </div>
+      </div>
+      <!-- End Sidebar Area Wrapper -->
+
+      <!-- Start Shop Page Product Area -->
+      <div class="col-lg-9">
+        <!-- Start Product Config Area -->
+        <div class="product-config-area d-md-flex justify-content-between align-items-center">
+          <div class="product-config-left d-sm-flex">
+            <p>Showing 1–12 of 25 results</p>
+            <ul class="product-show-quantity nav mt-xs-14">
+              <li>Show</li>
+              <li><a href="#" class="active">12</a></li>
+              <li><a href="#">15</a></li>
+              <li><a href="#">30</a></li>
+            </ul>
+          </div>
+
+          <div class="product-config-right d-flex align-items-center mt-sm-14">
+            <ul class="product-view-mode">
+              <li data-viewmode="grid-view" class="active"><i class="fa fa-th"></i></li>
+              <li data-viewmode="list-view"><i class="fa fa-list"></i></li>
+            </ul>
+            <ul class="product-filter-sort">
+              <li>
+                <button class="filter-option arrow-toggle">Filters</button>
+              </li>
+              <li class="dropdown-show sort-by">
+                <button class="arrow-toggle">Sort By</button>
+                <ul class="dropdown-nav">
+                  <li><a href="#" class="active">Sort by Newest</a></li>
+                  <li><a href="#">Sort by Popularity</a></li>
+                  <li><a href="#">Sort by Average Rating</a></li>
+                  <li><a href="#">Sort by Price: Low to High</a></li>
+                  <li><a href="#">Sort by Price: High to Low</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Product Config Area -->
+
+        <!-- Start Product Filter Item Area -->
+        <div class="product-filter-item-wrapper">
+          <div class="product-filter-content d-md-flex justify-content-between">
+            <!--  Start Single Filter Item -->
+            <div class="single-filter-item-wrap">
+              <h3 class="filter-item-title">Sort By</h3>
+              <div class="filter-item-body">
+                <ul class="filter-item-list">
+                  <li><a href="#" class="active">Sort by Newest</a></li>
+                  <li><a href="#">Sort by Popularity</a></li>
+                  <li><a href="#">Sort by Average Rating</a></li>
+                  <li><a href="#">Sort by Price: Low to High</a></li>
+                  <li><a href="#">Sort by Price: High to Low</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--  End Single Filter Item -->
+
+            <!--  Start Single Filter Item -->
+            <div class="single-filter-item-wrap">
+              <h3 class="filter-item-title">By Price</h3>
+              <div class="filter-item-body">
+                <ul class="filter-item-list">
+                  <li><a href="#">$20.00 - $30.00</a></li>
+                  <li><a href="#">$31.00 - $40.00</a></li>
+                  <li><a href="#">$41.00 - $50.00</a></li>
+                  <li><a href="#">$51.00 - $60.00</a></li>
+                  <li><a href="#">$61.00 - $70.00</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--  End Single Filter Item -->
+
+            <!--  Start Single Filter Item -->
+            <div class="single-filter-item-wrap">
+              <h3 class="filter-item-title">Categories</h3>
+              <div class="filter-item-body">
+                <ul class="filter-item-list">
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Brands</a></li>
+                  <li><a href="#">Clothing</a></li>
+                  <li><a href="#">Gift</a></li>
+                  <li><a href="#">Kids</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--  End Single Filter Item -->
+
+            <!--  Start Single Filter Item -->
+            <div class="single-filter-item-wrap">
+              <h3 class="filter-item-title">By color</h3>
+              <div class="filter-item-body">
+                <ul class="filter-item-list color-filter">
+                  <li class="black"><a href="#">Black</a></li>
+                  <li class="blue"><a href="#">Blue</a></li>
+                  <li class="pink"><a href="#">Pink</a></li>
+                  <li class="violet"><a href="#">violet</a></li>
+                  <li class="orange"><a href="#">Orange</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--  End Single Filter Item -->
+
+            <!--  Start Single Filter Item -->
+            <div class="single-filter-item-wrap">
+              <h3 class="filter-item-title">By size</h3>
+              <div class="filter-item-body">
+                <ul class="filter-item-list spurs-checkbox">
+                  <li><a href="#" class="active">S</a></li>
+                  <li><a href="#">M</a></li>
+                  <li><a href="#">L</a></li>
+                  <li><a href="#">XL</a></li>
+                  <li><a href="#">XXL</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--  End Single Filter Item -->
+          </div>
+        </div>
+        <!-- End Product Filter Item Area -->
+
+        <!-- Start Product Wrapper -->
+        <div class="shop-page-products-wrapper mt-44 mt-sm-30">
+          <div class="products-wrapper products-on-column">
+            <div class="row">
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-1-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets/img/products/prod-1-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge sale">-20%</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Product Grouped</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-2-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-2-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Open-Knit Sweater</a>
+                    </h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-3-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-3-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge hot">Hot</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Tassels Embroidered
+                      Dress</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-4-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-4-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge">New</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Tassels Embroidered
+                      Dress</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-5-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-5-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Product Grouped</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-6-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb"  th:src="@{/assets2/img/products/prod-6-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Open-Knit Sweater</a>
+                    </h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-7-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-7-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge sale">-20%</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Product Grouped</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-8-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-8-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge hot">Hot</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Tassels Embroidered
+                      Dress</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-9-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-9-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge">New</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Tassels Embroidered
+                      Dress</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-10-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-10-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge hot">Hot</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Tassels Embroidered
+                      Dress</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-11-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-11-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge">New</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Tassels Embroidered
+                      Dress</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+
+              <!-- Start Single Product -->
+              <div class="col-lg-4 col-sm-6">
+                <div class="single-product-wrap">
+                  <!-- Product Thumbnail -->
+                  <figure class="product-thumbnail">
+                    <a href="single-product.html" class="d-block">
+                      <img class="primary-thumb" th:src="@{/assets2/img/products/prod-12-1.jpg}"
+                           alt="Product"/>
+                      <img class="secondary-thumb" th:src="@{/assets2/img/products/prod-12-2.jpg}"
+                           alt="Product"/>
+                    </a>
+                    <figcaption class="product-hvr-content">
+                      <a href="#" class="btn btn-black btn-addToCart">Add to Cart</a>
+                      <div class="prod-btn-group">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                                      title="Quick Shop"><button
+                                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                        class="dl-icon-view"></i></button></span>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Wishlist"><i class="dl-icon-heart4"></i></a>
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i
+                                class="dl-icon-compare"></i></a>
+                      </div>
+                      <span class="product-badge hot">Hot</span>
+                    </figcaption>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details">
+                    <h2 class="product-name"><a href="single-product.html">Tassels Embroidered
+                      Dress</a></h2>
+                    <div class="product-prices">
+                      <del class="oldPrice">$50.00</del>
+                      <span class="price">$40.00</span>
+                    </div>
+                    <div class="list-view-content">
+                      <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco ommodo consequat. Duis aute irure dolor in reprehenderit dolore
+                        eu fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusantium commodi consectetur dignissimos, eveniet maiores nesciunt
+                        quisquam quos soluta!</p>
+
+                      <div class="list-btn-group mt-30 mt-sm-14">
+                        <a href="cart.html" class="btn btn-black">Add to Cart</a>
+                        <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to wishlist"><i class="dl-icon-heart2"></i></a>
+                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Add to Compare"><i class="dl-icon-compare2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+            </div>
+          </div>
+        </div>
+        <!-- End Product Wrapper -->
+
+        <!-- Page Pagination Start  -->
+        <div class="page-pagination-wrapper mt-70 mt-md-50 mt-sm-40">
+          <nav class="page-pagination">
+            <ul class="pagination justify-content-center">
+              <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Page Pagination End  -->
+      </div>
+      <!-- End Shop Page Product Area -->
+    </div>
+  </div>
+</div>

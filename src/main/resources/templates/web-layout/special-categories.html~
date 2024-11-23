@@ -1,0 +1,56 @@
+<!--== Start Special Categories Banner ==-->
+<div th:fragment="special-categories" class="special-category-banner pt-90 pt-md-60 pt-sm-50">
+    <div class="container-fluid">
+        <div class="special-category-banner-content">
+            <div class="row">
+                <!-- Single Banner Start -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single-special-banner">
+                        <figure class="banner-thumbnail">
+                            <a href="shop.html"><img th:src="@{/assets2/img/category/home1/h1-banner1.jpg}" class="banner-thumb"
+                                                     alt="Category Banner"/></a>
+                            <figcaption class="banner-cate-name text-center">
+                                <h2 class="banner-title">Polo Shirt</h2>
+                                <img class="banner-sale" th:src="@{/assets2/img/category/home1/off-25.png}" alt="25 % Sale"/>
+                                <a href="shop.html" class="btn btn-black">Shop Now</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Single Banner End -->
+
+                <!-- Single Banner Start -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single-special-banner">
+                        <figure class="banner-thumbnail">
+                            <a href="shop.html"><img th:src="@{/assets2/img/category/home1/h1-banner2.jpg}" class="banner-thumb"
+                                                     alt="Category Banner"/></a>
+                            <figcaption class="banner-cate-name text-center">
+                                <h2 class="banner-title">Bow Soft Dress</h2>
+                                <img class="banner-sale" th:src="@{/assets2/img/category/home1/off-40.png}" alt="40 % Sale"/>
+                                <a href="shop.html" class="btn btn-black">Shop Now</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Single Banner End -->
+
+                <!-- Single Banner Start -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single-special-banner">
+                        <figure class="banner-thumbnail">
+                            <a href="shop.html"><img th:src="@{assets2/img/category/home1/h1-banner3.jpg}" class="banner-thumb"
+                                                     alt="Category Banner"/></a>
+                            <figcaption class="banner-cate-name text-center">
+                                <h2 class="banner-title">Men Bags</h2>
+                                <img class="banner-sale" th:src="@{assets2/img/category/home1/off-30.png}" alt="40 % Sale"/>
+                                <a href="shop.html" class="btn btn-black">Shop Now</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Single Banner End -->
+            </div>
+        </div>
+    </div>
+</div>

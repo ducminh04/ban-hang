@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+
+    <title>Shop Sidebar :: Veera - Multipurpose eCommerce Bootstrap 5 Template</title>
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" th:href="@{/assets2/img/favicon.ico}" type="image/x-icon"/>
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+    <!--=== Revolution Slider CSS ===-->
+    <link th:href="@{/assets/css/revslider/settings.css}" rel="stylesheet">
+
+    <!--=== Bootstrap CSS ===-->
+    <link th:href="@{/assets2/css/vendor/bootstrap.min.css}" rel="stylesheet">
+    <!--=== Font-Awesome CSS ===-->
+    <link th:href="@{/assets2/css/vendor/font-awesome.css}" rel="stylesheet">
+    <!--=== Dl Icon CSS ===-->
+    <link th:href="@{/assets2/css/vendor/dl-icon.css}" rel="stylesheet">
+    <!--=== Plugins CSS ===-->
+    <link th:href="@{/assets2/css/plugins.css}" rel="stylesheet">
+    <!--=== Helper CSS ===-->
+    <link th:href="@{/assets2/css/helper.min.css}" rel="stylesheet">
+    <!--=== Main Style CSS ===-->
+    <link th:href="@{/assets2/css/style.css}" rel="stylesheet">
+
+    <!-- Modernizer JS -->
+    <script th:href="@{/assets2/js/vendor/modernizr-2.8.3.min.js}"></script>
+
+    <!--[if lt IE 9]>
+    <script th:src="@{//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js""></script>
+    <script th:src="@{//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="preloader-active">
+<!--== Start PreLoader Wrap ==-->
+<div class="preloader-area-wrap">
+    <div class="spinner d-flex justify-content-center align-items-center h-100">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<div th:replace="web-layout/header :: header"></div>
+<div class="page-header-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="page-header-content">
+                    <h2>Shop Sidebar</h2>
+                    <nav class="page-breadcrumb">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html" class="active">Shop Sidebar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<th:fragment th:replace="web-layout/category :: category"></th:fragment>
+
+</body>
+</html>

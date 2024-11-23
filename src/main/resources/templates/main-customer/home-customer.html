@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+
+    <title>Veera - Multipurpose eCommerce Bootstrap 5 Template</title>
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" th:href="@{/assets2/img/favicon.ico}" type="image/x-icon"/>
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <!--=== Revolution Slider CSS ===-->
+    <link th:href="@{/assets2/css/revslider/settings.css}" rel="stylesheet">
+
+    <!--=== Bootstrap CSS ===-->
+    <link th:href="@{/assets2/css/vendor/bootstrap.min.css}" rel="stylesheet">
+    <!--=== Font-Awesome CSS ===-->
+    <link th:href="@{/assets2/css/vendor/font-awesome.css}" rel="stylesheet">
+    <!--=== Dl Icon CSS ===-->
+    <link th:href="@{/assets2/css/vendor/dl-icon.css}" rel="stylesheet">
+    <!--=== Plugins CSS ===-->
+    <link th:href="@{/assets2/css/plugins.css}" rel="stylesheet">
+    <!--=== Helper CSS ===-->
+    <link th:href="@{/assets2/css/helper.min.css}" rel="stylesheet">
+    <!--=== Main Style CSS ===-->
+    <link th:href="@{/assets2/css/style.css}" rel="stylesheet">
+
+    <!-- Modernizer JS -->
+    <script th:src="@{/assets2/js/vendor/modernizr-2.8.3.min.js}"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div th:replace="web-layout/header :: header"></div>
+<div th:replace="web-layout/slider :: slider"></div>
+<div th:replace="web-layout/special-categories :: special-categories"></div>
+<div th:replace="web-layout/must-have-product :: must-have-product"></div>
+<div th:replace="web-layout/best-seller-product :: best-seller-product"></div>
+<div th:replace="web-layout/sale-off-product :: sale-off-product"></div>
+<div th:replace="web-layout/instagram-feed :: instagram-feed"></div>
+<div  th:replace="web-layout/footer :: footer"></div>
+
+
+<script th:src="@{/assets2/js/vendor/jquery.min.js}"></script>
+<!--=== Jquery Migrate Min Js ===-->
+<script th:src="@{/assets2/js/vendor/jquery-migrate.min.js}"></script>
+<!--=== Popper Min Js ===-->
+<script th:src="@{/assets2/js/vendor/popper.min.js}"></script>
+<!--=== Bootstrap Min Js ===-->
+<script th:src="@{/assets2/js/vendor/bootstrap.min.js}"></script>
+<!--=== Plugins Js ===-->
+<script th:src="@{/assets2/js/plugins.js}"></script>
+<!--=== Ajax Mail Js ===-->
+<script th:src="@{/assets2/js/ajax-mail.js}"></script>
+
+<!--=== Active Js ===-->
+<script th:src="@{/assets2/js/active.min.js}"></script>
+
+<!--=== Revolution Slider Js ===-->
+<script th:src="@{/assets2/js/revslider/jquery.themepunch.tools.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/jquery.themepunch.revolution.min.js}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.actions.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.carousel.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.kenburn.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.layeranimation.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.migration.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.navigation.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.parallax.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.slideanims.min.js}"></script>
+<script th:src="@{/assets2/js/revslider/extensions/revolution.extension.video.min.js}"></script>
+
+<script th:src="@{/assets2/js/revslider/revslider-active.js}"></script>
+</body>
+</html>

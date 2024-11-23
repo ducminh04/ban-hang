@@ -1,0 +1,10 @@
+spring.application.name=ClothingStore
+spring.datasource.url=jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;databaseName=SalesItems
+spring.datasource.username=sa
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServer2012Dialect
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+

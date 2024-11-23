@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <title>Elstar-Admin</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/attribute.css">
+</head>
+<body>
+<!-- App Start-->
+<div id="root">
+    <!-- App Layout-->
+    <div class="app-layout-classic flex flex-auto flex-col">
+        <div class="flex flex-auto min-w-0">
+            <div th:replace="layout/side-nav :: side-nav"></div>
+            <div class="flex flex-col flex-auto min-h-screen min-w-0 relative w-full">
+                <div th:replace="layout/header :: header"></div>
+                <div class="h-full flex flex-auto flex-col justify-between">
+                    <!-- Content start -->
+                    <main class="h-full">
+                        <div class="page-container relative h-full flex flex-auto flex-col px-4 sm:px-6 md:px-8 py-4 sm:py-6">
+                            <div class="container mx-auto">
+                                <div class="card adaptable-card">
+                                    <div class="card-body">
+                                        <div class="toolbar">
+                                            <h4>Danh sách màu sắc</h4>
+                                            <div class="button-container">
+                                                <button onclick="toggleModal()" class="btn">Thêm màu sắc</button>
+                                            </div>
+                                        </div>
+                                        <div class="card adaptable-card">
+                                            <div class="card-body">
+                                                <table class="table-default" id="colorTable">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Tên màu sắc</th>
+                                                        <th>Ngày cập nhật</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                     <tr th:each="color, iterStat : ${colorList}">
+                                                         <td th:text="${iterStat.index + 1}"></td>
+                                                         <td th:text="${color.colorName}"></td>
+                                                         <td th:text="${#dates.format(color.updatedAt, 'dd-MM-yyyy HH:mm')}"></td>
+                                                         <td>
+                                                         </td>
+                                                     </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <!-- Content end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<form th:action="@{/admin/create-color}" method="post">
+    <div id="categoryModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="toggleModal()">&times;</span>
+            <h3>Thêm màu sắc</h3>
+            <div class="form-group">
+                <label for="colorName">Chọn màu sắc</label>
+                <input type="text" id="colorName"  name="colorName" required>
+            </div>
+            <div class="modal-buttons">
+                <button type="button" class="btn-cancel">Hủy</button>
+                <button type="submit" class="btn-save">Thêm</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- Core Vendors JS -->
+<script src="/js/vendors.min.js"></script>
+<script src="/vendors/apexcharts/apexcharts.js"></script>
+<script src="/js/pages/sales-dashboard.js"></script>
+<script src="/vendors/datatables/jquery.dataTables.min.js"></script>
+<script src="/vendors/datatables/dataTables.custom-ui.min.js"></script>
+<script src="/js/pages/product-list.js"></script>
+<script src="/js/pages/customers.js"></script>
+<script src="/js/app.min.js"></script>
+<script>
+    function toggleModal() {
+        const modal = document.getElementById('categoryModal');
+        modal.classList.toggle('hidden');
+    }
+
+</script>
+</body>
+</html>

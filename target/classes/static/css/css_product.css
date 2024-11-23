@@ -1,0 +1,104 @@
+/* Style for search input */
+.input-search {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 16px;
+}
+.dropdown-filter {
+    display: inline-block;
+    margin-right: 16px;
+}
+.dropdown-filter label {
+    margin-right: 4px;
+    font-weight: bold;
+    color: #333;
+}
+.dropdown-filter select {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+/* Button container for positioning */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal.hidden {
+    display: none;
+}
+.modal-content {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+    transition: transform 0.3s ease-out;
+}
+.close-btn {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: red;
+    transition: color 0.2s;
+}
+.close-btn:hover {
+    color: #333;
+}
+.modal-content {
+    width: 600px;
+    padding: 40px;
+}
+.modal-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.modal-content textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+.modal-content input[type="text"]:focus,
+.modal-content textarea:focus {
+    border-color: #4f46e5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}

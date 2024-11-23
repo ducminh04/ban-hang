@@ -1,0 +1,101 @@
+<div th:fragment="side-nav" class="side-nav side-nav-light side-nav-expand">
+    <div class="side-nav-header">
+        <div class="logo px-6">
+            <img th:src="@{/img/logo/logo-light-full.png}" alt="Elstar logo">
+        </div>
+    </div>
+    <div class="side-nav-content relative side-nav-scroll">
+        <nav class="menu menu-transparent px-4 pb-4">
+            <div class="menu-group">
+                <div class="menu-title">General</div>
+                <ul>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2">
+                        <a class="menu-item-link" th:href="@{/admin/statistical}">
+                            <svg class="menu-item-icon" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"></path>
+                            </svg>
+                            <span class="menu-item-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu-collapse">
+                        <div class="menu-collapse-item">
+                            <svg class="menu-item-icon" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                            <span class="menu-item-text">Product Management</span>
+                        </div>
+                        <ul>
+                            <li data-menu-item="classic-sales-dashboard" class="menu-item">
+                                <a class="h-full w-full flex items-center" th:href="@{/admin/display-product}">
+                                    <span>Product</span>
+                                </a>
+                            </li>
+                            <li data-menu-item="classic-product-list" class="menu-item">
+                                <a class="h-full w-full flex items-center" th:href="@{/admin/style-product}">
+                                    <span>Style</span>
+                                </a>
+                            </li>
+                            <li data-menu-item="classic-product-edit" class="menu-item">
+                                <a class="h-full w-full flex items-center" th:href="@{/admin/material-product}":>
+                                    <span>Material</span>
+                                </a>
+                            </li>
+                            <li data-menu-item="classic-new-product" class="menu-item">
+                                <a class="h-full w-full flex items-center" th:href="@{/admin/category-product}">
+                                    <span>Category</span>
+                                </a>
+                            </li>
+                            <li data-menu-item="classic-order-list" class="menu-item">
+                                <a class="h-full w-full flex items-center" th:href="@{/admin/branch-product}">
+                                    <span>Branch</span>
+                                </a>
+                            </li>
+                            <li data-menu-item="classic-order-details" class="menu-item">
+                                <a class="h-full w-full flex items-center" th:href="@{/admin/color-product}">
+                                    <span>Color</span>
+                                </a>
+                            </li>
+                            <li data-menu-item="classic-order-details" class="menu-item">
+                                <a class="h-full w-full flex items-center" th:href="@{/admin/size-product}">
+                                    <span>Size</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <ul>
+                    <li data-menu-item="classic-welcome" class="menu-item menu-item-single mb-2">
+                        <a class="menu-item-link" th:href="@{/admin/display-employee}">
+                            <svg class="menu-item-icon" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"></path>
+                            </svg>
+                            <span class="menu-item-text">Employee</span>
+                        </a>
+                    </li>
+                    <li data-menu-item="classic-access-denied" class="menu-item menu-item-single mb-2">
+                        <a class="menu-item-link" th:href="@{/admin/display-customer}">
+												<span class="menu-item-icon">
+													<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+														<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+													</svg>
+												</span>
+                            <span class="menu-item-text">Customer</span>
+                        </a>
+                    </li>
+                    <li data-menu-item="classic-access-denied" class="menu-item menu-item-single mb-2">
+                        <a class="menu-item-link" href="classic-access-denied.html">
+												<span class="menu-item-icon">
+													<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+														<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+													</svg>
+												</span>
+                            <span class="menu-item-text">Invoice</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>

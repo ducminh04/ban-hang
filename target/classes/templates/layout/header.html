@@ -1,0 +1,88 @@
+<header th:fragment="header" class="header border-b border-gray-200 dark:border-gray-700">
+    <div class="header-wrapper h-16">
+        <!-- Header Nav Start start-->
+        <div class="header-action header-action-start">
+            <div id="side-nav-toggle" class="side-nav-toggle header-action-item header-action-item-hoverable">
+                <div class="text-2xl">
+                    <svg class="side-nav-toggle-icon-expand" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+                    </svg>
+                    <svg class="side-nav-toggle-icon-collapsed hidden" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="side-nav-toggle-mobile header-action-item header-action-item-hoverable" data-bs-toggle="modal" data-bs-target="#mobile-nav-drawer">
+                <div class="text-2xl">
+                    <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-search header-action-item header-action-item-hoverable text-2xl" data-bs-toggle="modal" data-bs-target="#dialog-search">
+                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
+                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- Header Nav Start end-->
+        <!-- Header Nav End start-->
+        <div class="header-action header-action-end">
+            <!-- Notification-->
+            <div class="dropdown">
+                <div class="dropdown-toggle" id="nav-notification-dropdown" data-bs-toggle="dropdown">
+                    <div class="text-2xl header-action-item header-action-item-hoverable">
+												<span class="badge-wrapper">
+													<span class="badge-dot badge-inner" style="top: 3px; right: 6px;"></span>
+													<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+														<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+													</svg>
+												</span>
+                    </div>
+                </div>
+                <ul class="dropdown-menu p-0 min-w-[280px] md:min-w-[340px]">
+                    <li class="menu-item-header">
+                        <div class="border-b border-gray-200 dark:border-gray-600 px-4 py-2 flex items-center justify-between">
+                            <h6>Notifications</h6>
+                            <span class="tooltip-wrapper">
+														<button class="button bg-transparent border border-transparent hover:bg-gray-50 dark:hover:bg-gray-600 active:bg-gray-100 dark:active:bg-gray-500 dark:active:border-gray-500 text-gray-600 dark:text-gray-100 radius-circle h-9 w-9 inline-flex items-center justify-center text-lg">
+															<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+																<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"></path>
+															</svg>
+														</button>
+							</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- User Dropdown-->
+            <div class="dropdown">
+                <div class="dropdown-toggle" id="user-dropdown" data-bs-toggle="dropdown">
+                    <div class="header-action-item flex items-center gap-2">
+												<span class="avatar avatar-circle" data-avatar-size="32" style="width: 32px">
+												<img class="avatar-img avatar-circle" src="img/avatars/thumb-1.jpg" loading="lazy" alt=""></span>
+                        <div class="hidden md:block">
+                            <div class="text-xs capitalize">admin</div>
+                            <div class="font-bold">Carolyn Perkins</div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="dropdown-menu bottom-end min-w-[240px]">
+                    <li id="menu-item-29-2VewETdxAb" class="menu-item-divider"></li>
+                    <li class="menu-item menu-item-hoverable gap-2 h-[35px]">
+												<span class="text-xl opacity-50">
+													<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+														<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+													</svg>
+												</span>
+                        <span>Sign Out</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Header Nav End end -->
+    </div>
+</header>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" th:href="@{/img/favicon.ico}">
+    <title>Elstar-Admin</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<!-- App Start-->
+<div id="root">
+    <!-- App Layout-->
+    <div class="app-layout-classic flex flex-auto flex-col">
+        <div class="flex flex-auto min-w-0">
+            <!-- Side Nav start-->
+            <div th:replace="layout/side-nav :: side-nav"></div>
+            <!-- Side Nav end-->
+
+            <!-- Header Nav start-->
+            <div class="flex flex-col flex-auto min-h-screen min-w-0 relative w-full">
+                <div th:replace="layout/header :: header"></div>
+                <div class="h-full flex flex-auto flex-col justify-between">
+
+                    <form th:action="@{/admin/create-employee}" method="post">
+                        <main class="h-full">
+                            <div class="employee-form-container">
+                                <!-- Ảnh đại diện -->
+                                <div class="avatar-upload">
+                                    <label for="upload-avatar" class="avatar-label">Ảnh đại diện</label>
+                                    <div class="avatar-placeholder">
+                                        <input type="file" id="upload-avatar" class="avatar-input">
+                                        <span>Upload</span>
+                                    </div>
+                                </div>
+                                <!-- Thông tin nhân viên -->
+                                <div class="employee-info">
+                                    <h2>Thông tin nhân viên</h2>
+                                    <div class="form-grid">
+                                        <!-- Cột trái -->
+                                        <div class="form-column">
+                                            <div class="form-group">
+                                                <label for="name">Tên nhân viên *</label>
+                                                <input type="text" id="name" name="name" placeholder="Tên nhân viên">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id-card">Căn cước công dân *</label>
+                                                <input type="text" name="cccd" id="id-card" placeholder="CCCD">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email *</label>
+                                                <input type="email" name="email" id="email" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="city">Tỉnh/Thành phố *</label>
+                                                <input type="text" name="city" id="city" placeholder="Tinh/Thanh pho">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="ward">Xã/Phường *</label>
+                                                <input type="text" name="ward" id="ward" placeholder="Xa/Phuong">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="status">Trạng thái *</label>
+                                                <select id="status" name="status">
+                                                    <option>Active</option>
+                                                    <option>Inactive</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- Cột phải -->
+                                        <div class="form-column">
+                                            <div class="form-group">
+                                                <label for="date">Ngày sinh *</label>
+                                                <input type="date" id="date" name="date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Giới tính *</label>
+                                                <div class="radio-group">
+                                                    <input type="radio" id="male" name="gender" value="Nam">
+                                                    <label for="male">Nam</label>
+                                                    <input type="radio" id="female" name="gender" value="Nữ">
+                                                    <label for="female">Nữ</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Số điện thoại *</label>
+                                                <input type="tel" name="phone" id="phone" placeholder="Số điện thoại">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="district">Quận/Huyện *</label>
+                                                <input type="text" name="district" id="district" placeholder="Quận/Huyện">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="address">Số nhà/Ngõ/Đường</label>
+                                                <input type="text" name="address" id="address" placeholder="Số nhà/Ngõ/Đường">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="position">Chức vu *</label>
+                                                <select id="position" name="position">
+                                                    <option>Nhân viên </option>
+                                                    <option>Admin</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="qr-scan-button">Thêm nhân viên</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </form>
+                    <!-- Content end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Core Vendors JS -->
+<script th:src="@{/js/vendors.min.js}"></script>
+<script th:src="@{/vendors/apexcharts/apexcharts.js}"></script>
+<script th:src="@{/js/pages/sales-dashboard.js}"></script>
+<script th:src="@{/vendors/datatables/jquery.dataTables.min.js}"></script>
+<script th:src="@{/vendors/datatables/dataTables.custom-ui.min.js}"></script>
+<script th:src="@{/js/pages/product-list.js}"></script>
+<style>
+    /* Container chính */
+    .employee-form-container {
+        display: flex;
+        gap: 32px;
+        padding: 20px;
+        background-color: #f9fafb;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ảnh đại diện */
+    .avatar-upload {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    .avatar-label {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .avatar-placeholder {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed #ddd;
+        border-radius: 50%;
+        color: #888;
+        cursor: pointer;
+    }
+
+    .avatar-placeholder span {
+        font-size: 14px;
+    }
+
+    .avatar-input {
+        display: none;
+    }
+
+    /* Thông tin nhân viên */
+    .employee-info {
+        flex: 3;
+    }
+
+    .employee-info h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    .form-grid {
+        display: flex;
+        gap: 32px;
+    }
+
+    /* Cột trong form */
+    .form-column {
+        flex: 1;
+    }
+
+    /* Nhóm form */
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-group input, .form-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Radio group */
+    .radio-group {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .radio-group input[type="radio"] {
+        margin: 0;
+    }
+
+    /* Nút quét QR */
+    .qr-scan-button {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .qr-scan-button:hover {
+        background-color: #0056b3;
+    }
+
+</style>
+</body>
+</html>

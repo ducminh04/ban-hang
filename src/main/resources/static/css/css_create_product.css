@@ -1,0 +1,128 @@
+/* General container styling */
+.container {
+    max-width: 95%; /* Kéo chiều ngang gần lề hơn */
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+    margin: 20px auto; /* Cách đều 20px từ trên, dưới, trái, phải */
+    padding: 20px; /* Giữ khoảng cách vừa đủ giữa các nội dung và viền */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+/* Title styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Giảm khoảng cách dưới tiêu đề */
+    font-size: 22px; /* Giảm kích thước chữ */
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Form grid layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px; /* Giảm khoảng cách giữa các trường */
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 6px; /* Giảm khoảng cách giữa label và input */
+}
+
+/* Input fields styling */
+input, select, textarea {
+    width: 100%;
+    padding: 10px; /* Giảm padding */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px; /* Giảm kích thước font */
+    color: #333333;
+    background-color: #f7f7f7;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* Focus effect for input fields */
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Styling for textarea */
+textarea {
+    height: 130px; /* Giảm chiều cao textarea */
+    resize: vertical;
+}
+
+/* Full-width for textarea */
+.form-group[style*="grid-column: span 2"] {
+    grid-column: span 2;
+}
+
+/* Styling for select and button group */
+.select-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.select-group select {
+    flex-grow: 1;
+}
+
+.btn-add {
+    background-color: #28a745;
+    border: none;
+    padding: 8px 10px; /* Giảm kích thước button */
+    margin-left: 8px; /* Giảm khoảng cách với select */
+    color: #ffffff;
+    font-size: 16px; /* Giảm kích thước chữ */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}
+
+/* Submit button styling */
+.btn-submit {
+    width: 100%;
+    padding: 10px; /* Giảm padding */
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 16px; /* Giảm khoảng cách trên */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

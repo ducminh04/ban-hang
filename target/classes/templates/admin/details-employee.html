@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" th:href="@{/img/favicon.ico}">
+    <title>Employee Details</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css}" rel="stylesheet">
+</head>
+<body>
+<!-- App Start-->
+<div id="root">
+    <!-- App Layout-->
+    <div class="app-layout-classic flex flex-auto flex-col">
+        <div class="flex flex-auto min-w-0">
+            <!-- Side Nav start-->
+            <div th:replace="layout/side-nav :: side-nav"></div>
+            <!-- Side Nav end-->
+            <!-- Header Nav start-->
+            <div class="flex flex-col flex-auto min-h-screen min-w-0 relative w-full">
+                <div th:replace="layout/header :: header"></div>
+                <div class="h-full flex flex-auto flex-col justify-between">
+                    <main class="h-full">
+                        <div class="employee-detail-modal">
+                            <div class="employee-detail-form">
+                                <div class="form-header">
+                                    <h2>Employee Details</h2>
+                                    <button class="close-button" onclick="closeModal()">✖</button>
+                                </div>
+                                <div class="form-body">
+                                    <!-- Photo section -->
+                                    <div class="photo-section">
+                                        <img id="employeePhoto" src="path/to/photo.jpg" alt="Employee Photo">
+                                    </div>
+
+                                    <!-- Form fields -->
+                                    <div class="form-fields">
+                                        <div>
+                                            <label for="employeeCode">Employee Code</label>
+                                            <input type="text" id="employeeCode" readonly>
+
+                                            <label for="employeeName">Name</label>
+                                            <input type="text" id="employeeName" readonly>
+
+                                            <label for="employeePhone">Phone</label>
+                                            <input type="text" id="employeePhone" readonly>
+
+                                            <label for="employeeEmail">Email</label>
+                                            <input type="email" id="employeeEmail" readonly>
+                                        </div>
+                                        <div>
+                                            <label for="gender">Gender</label>
+                                            <div class="gender-options">
+                                                <input type="radio" name="gender" id="genderMale" value="Male" disabled>
+                                                <label for="genderMale">Male</label>
+                                                <input type="radio" name="gender" id="genderFemale" value="Female" disabled>
+                                                <label for="genderFemale">Female</label>
+                                            </div>
+
+                                            <label for="employeeAddress">Address</label>
+                                            <input type="text" id="employeeAddress" readonly>
+
+                                            <label for="employeeWard">Ward</label>
+                                            <input type="text" id="employeeWard" readonly>
+
+                                            <label for="employeeDistrict">District</label>
+                                            <input type="text" id="employeeDistrict" readonly>
+
+                                            <label for="employeeCity">City</label>
+                                            <input type="text" id="employeeCity" readonly>
+
+                                            <label for="employeePosition">Position</label>
+                                            <select id="employeePosition" disabled>
+                                                <option>Manager</option>
+                                                <option>Staff</option>
+                                            </select>
+
+                                            <label for="employeeBirthDate">Birth Date</label>
+                                            <input type="date" id="employeeBirthDate" readonly>
+
+                                            <label for="employeeStatus">Status</label>
+                                            <select id="employeeStatus" disabled>
+                                                <option>Active</option>
+                                                <option>Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Core Vendors JS -->
+<script th:src="@{/js/vendors.min.js}"></script>
+<script th:src="@{/vendors/apexcharts/apexcharts.js}"></script>
+<script th:src="@{/js/pages/sales-dashboard.js}"></script>
+<script th:src="@{/vendors/datatables/jquery.dataTables.min.js}"></script>
+<script th:src="@{/vendors/datatables/dataTables.custom-ui.min.js}"></script>
+<script th:src="@{/js/pages/product-list.js}"></script>
+
+<style>
+    /* Modal Background */
+    .employee-detail-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Tăng độ tối của nền */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Form Container */
+    .employee-detail-form {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        width: 850px;
+        max-width: 90%;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header Section */
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .form-header h2 {
+        font-size: 1.8em;
+        color: #444;
+    }
+
+    .close-button {
+        background: transparent;
+        border: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        color: #888;
+        padding: 8px;
+        transition: color 0.3s;
+    }
+
+    .close-button:hover {
+        color: #444;
+    }
+
+    /* Photo Section */
+    .photo-section {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    .photo-section img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #ddd;
+    }
+
+    /* Form Fields Container */
+    .form-fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .form-fields label {
+        font-size: 0.9em;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .form-fields input,
+    .form-fields select {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+    }
+
+    .form-fields input[readonly],
+    .form-fields select[disabled] {
+        background-color: #eee;
+        cursor: not-allowed;
+    }
+
+    /* Gender Options */
+    .gender-options {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .gender-options input {
+        width: auto;
+    }
+</style>
+
+<script>
+    function closeModal() {
+        document.querySelector(".employee-detail-modal").style.display = "none";
+    }
+</script>
+</body>
+</html>
